@@ -45,9 +45,9 @@ struct SlokView: View {
                         .padding(.bottom, 25)
                         .multilineTextAlignment(.center)
 
-                    Text("slok by slok: \(slok.slok)")
-                        .padding(.bottom, 25)
-                        .multilineTextAlignment(.center)
+//                    Text("slok by slok: \(slok.slok)")
+//                        .padding(.bottom, 25)
+//                        .multilineTextAlignment(.center)
 
                     TitleView(title: isEnglish ? "Translation" : "अनुवाद")
 
