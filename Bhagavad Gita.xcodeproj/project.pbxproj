@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0747B8A62A810F9900B12C66 /* ChapterInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747B8A52A810F9900B12C66 /* ChapterInformationView.swift */; };
+		0755EB042A80FECD0078A3A9 /* ChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755EB032A80FECD0078A3A9 /* ChapterModel.swift */; };
+		0755EB062A80FED70078A3A9 /* AllChaptersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755EB052A80FED70078A3A9 /* AllChaptersViewModel.swift */; };
 		0785A4062A80FD73007C322C /* Bhagavad_GitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785A4052A80FD73007C322C /* Bhagavad_GitaApp.swift */; };
-		0785A4082A80FD73007C322C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785A4072A80FD73007C322C /* ContentView.swift */; };
+		0785A4082A80FD73007C322C /* AllChaptersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785A4072A80FD73007C322C /* AllChaptersView.swift */; };
 		0785A40A2A80FD75007C322C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0785A4092A80FD75007C322C /* Assets.xcassets */; };
 		0785A40D2A80FD75007C322C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0785A40C2A80FD75007C322C /* Preview Assets.xcassets */; };
+		07F790542A81149F007CBCD1 /* SlokView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F790532A81149F007CBCD1 /* SlokView.swift */; };
+		07F790562A81183A007CBCD1 /* SlokViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F790552A81183A007CBCD1 /* SlokViewModel.swift */; };
+		07F790582A811B92007CBCD1 /* SlokModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F790572A811B92007CBCD1 /* SlokModel.swift */; };
+		07F7905A2A8125CD007CBCD1 /* DownloadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F790592A8125CD007CBCD1 /* DownloadData.swift */; };
+		07F7905C2A812683007CBCD1 /* OtherExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7905B2A812683007CBCD1 /* OtherExplanationView.swift */; };
+		07F7905E2A81292E007CBCD1 /* AllAuthorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7905D2A81292E007CBCD1 /* AllAuthorsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0747B8A52A810F9900B12C66 /* ChapterInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterInformationView.swift; sourceTree = "<group>"; };
+		0755EB032A80FECD0078A3A9 /* ChapterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterModel.swift; sourceTree = "<group>"; };
+		0755EB052A80FED70078A3A9 /* AllChaptersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChaptersViewModel.swift; sourceTree = "<group>"; };
+		0755EB082A8105740078A3A9 /* Bhagavad-Gita-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bhagavad-Gita-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0785A4022A80FD73007C322C /* Bhagavad Gita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bhagavad Gita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0785A4052A80FD73007C322C /* Bhagavad_GitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bhagavad_GitaApp.swift; sourceTree = "<group>"; };
-		0785A4072A80FD73007C322C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0785A4072A80FD73007C322C /* AllChaptersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChaptersView.swift; sourceTree = "<group>"; };
 		0785A4092A80FD75007C322C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0785A40C2A80FD75007C322C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07F790532A81149F007CBCD1 /* SlokView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlokView.swift; sourceTree = "<group>"; };
+		07F790552A81183A007CBCD1 /* SlokViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlokViewModel.swift; path = "Bhagavad Gita/ViewModels/SlokViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		07F790572A811B92007CBCD1 /* SlokModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlokModel.swift; path = "Bhagavad Gita/Models/SlokModel.swift"; sourceTree = SOURCE_ROOT; };
+		07F790592A8125CD007CBCD1 /* DownloadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadData.swift; path = "Bhagavad Gita/Utilities/DownloadData.swift"; sourceTree = SOURCE_ROOT; };
+		07F7905B2A812683007CBCD1 /* OtherExplanationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherExplanationView.swift; sourceTree = "<group>"; };
+		07F7905D2A81292E007CBCD1 /* AllAuthorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllAuthorsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0755EB072A80FF5D0078A3A9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				07F790592A8125CD007CBCD1 /* DownloadData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		0785A3F92A80FD73007C322C = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +78,12 @@
 		0785A4042A80FD73007C322C /* Bhagavad Gita */ = {
 			isa = PBXGroup;
 			children = (
+				0755EB082A8105740078A3A9 /* Bhagavad-Gita-Info.plist */,
 				0785A4052A80FD73007C322C /* Bhagavad_GitaApp.swift */,
-				0785A4072A80FD73007C322C /* ContentView.swift */,
+				0755EB072A80FF5D0078A3A9 /* Utilities */,
+				0785A4162A80FDA0007C322C /* Views */,
+				0785A4142A80FD94007C322C /* ViewModels */,
+				0785A4132A80FD8C007C322C /* Models */,
 				0785A4092A80FD75007C322C /* Assets.xcassets */,
 				0785A40B2A80FD75007C322C /* Preview Content */,
 			);
@@ -65,6 +96,36 @@
 				0785A40C2A80FD75007C322C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0785A4132A80FD8C007C322C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07F790572A811B92007CBCD1 /* SlokModel.swift */,
+				0755EB032A80FECD0078A3A9 /* ChapterModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0785A4142A80FD94007C322C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0755EB052A80FED70078A3A9 /* AllChaptersViewModel.swift */,
+				07F790552A81183A007CBCD1 /* SlokViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0785A4162A80FDA0007C322C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0785A4072A80FD73007C322C /* AllChaptersView.swift */,
+				0747B8A52A810F9900B12C66 /* ChapterInformationView.swift */,
+				07F790532A81149F007CBCD1 /* SlokView.swift */,
+				07F7905D2A81292E007CBCD1 /* AllAuthorsView.swift */,
+				07F7905B2A812683007CBCD1 /* OtherExplanationView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0785A4082A80FD73007C322C /* ContentView.swift in Sources */,
+				0755EB062A80FED70078A3A9 /* AllChaptersViewModel.swift in Sources */,
+				0755EB042A80FECD0078A3A9 /* ChapterModel.swift in Sources */,
+				07F7905A2A8125CD007CBCD1 /* DownloadData.swift in Sources */,
+				0785A4082A80FD73007C322C /* AllChaptersView.swift in Sources */,
+				0747B8A62A810F9900B12C66 /* ChapterInformationView.swift in Sources */,
+				07F7905C2A812683007CBCD1 /* OtherExplanationView.swift in Sources */,
+				07F790582A811B92007CBCD1 /* SlokModel.swift in Sources */,
+				07F790562A81183A007CBCD1 /* SlokViewModel.swift in Sources */,
 				0785A4062A80FD73007C322C /* Bhagavad_GitaApp.swift in Sources */,
+				07F790542A81149F007CBCD1 /* SlokView.swift in Sources */,
+				07F7905E2A81292E007CBCD1 /* AllAuthorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +345,11 @@
 				DEVELOPMENT_TEAM = R2Z9FDM5M6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bhagavad-Gita-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,10 +375,11 @@
 				DEVELOPMENT_TEAM = R2Z9FDM5M6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Bhagavad-Gita-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
