@@ -32,6 +32,7 @@
 		0785A4072A80FD73007C322C /* AllChaptersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChaptersView.swift; sourceTree = "<group>"; };
 		0785A4092A80FD75007C322C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0785A40C2A80FD75007C322C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07A74FC52A81FEA700E64B27 /* Bhagavad Gita.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bhagavad Gita.entitlements"; sourceTree = "<group>"; };
 		07F790532A81149F007CBCD1 /* SlokView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlokView.swift; sourceTree = "<group>"; };
 		07F790552A81183A007CBCD1 /* SlokViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlokViewModel.swift; path = "Bhagavad Gita/ViewModels/SlokViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		07F790572A811B92007CBCD1 /* SlokModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlokModel.swift; path = "Bhagavad Gita/Models/SlokModel.swift"; sourceTree = SOURCE_ROOT; };
@@ -78,6 +79,7 @@
 		0785A4042A80FD73007C322C /* Bhagavad Gita */ = {
 			isa = PBXGroup;
 			children = (
+				07A74FC52A81FEA700E64B27 /* Bhagavad Gita.entitlements */,
 				0755EB082A8105740078A3A9 /* Bhagavad-Gita-Info.plist */,
 				0785A4052A80FD73007C322C /* Bhagavad_GitaApp.swift */,
 				0755EB072A80FF5D0078A3A9 /* Utilities */,
@@ -339,6 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bhagavad Gita/Bhagavad Gita.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bhagavad Gita/Preview Content\"";
@@ -369,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bhagavad Gita/Bhagavad Gita.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bhagavad Gita/Preview Content\"";
@@ -389,6 +393,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ayushsinghal.Bhagavad-Gita";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -53,7 +53,7 @@ struct SingleChapterCardView: View {
 
     var body: some View {
         VStack {
-            Text(isEnglish ? chapter.translation : chapter.name)
+            Text("\(chapter.chapter_number) - " + (isEnglish ? chapter.translation : chapter.name))
                 .font(.title)
                 .fontWeight(.bold)
 
