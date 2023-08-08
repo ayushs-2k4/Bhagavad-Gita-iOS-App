@@ -14,7 +14,7 @@ struct ChapterInformationView: View {
 
     var body: some View {
         ScrollView {
-            ForEach(1 ..< chapter.verses_count + 1) { value in
+            ForEach(1 ..< chapter.verses_count + 1, id: \.self) { value in
                 VStack(spacing: 10) {
                     NavigationLink(value: "\(chapter.chapter_number) \(value)", label: {
                         RowView(title: isEnglish ? "Verse: \(value)" : "श्लोक: \(value)")

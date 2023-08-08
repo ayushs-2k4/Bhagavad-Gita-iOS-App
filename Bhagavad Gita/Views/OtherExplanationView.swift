@@ -47,6 +47,7 @@ struct TextView: View {
 
                 
                 Text(explanation)
+                    .textSelection(.enabled)
                 
                 Text("\n")
             }

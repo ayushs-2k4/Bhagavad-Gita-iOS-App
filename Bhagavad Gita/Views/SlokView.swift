@@ -45,14 +45,20 @@ struct SlokView: View {
 
                     Text(isEnglish ? slokViewModel.slok?.raman.et ?? "" : slokViewModel.slok?.rams.hc ?? "")
                         .textSelection(.enabled)
-                    
+
                     NavigationLink(value: slokViewModel.slok, label: {
-                        Text("All Explanations -->")
-                            .frame(maxWidth: .infinity)
-                            .padding()
-                            .foregroundStyle(colorScheme == .dark ? .black : .white)
-                            .background(Color.gray)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                        
+                        HStack {
+                            Text("All Explanations")
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .foregroundStyle(.gray)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .foregroundStyle(colorScheme == .dark ? .white : .black)
+                        .background(colorScheme == .dark ? Color(red: 28/255, green: 28/255, blue: 30/255) : Color(red: 242/255, green: 242/255, blue: 247/255))
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
                     })
                 }
                 .padding(.horizontal)
