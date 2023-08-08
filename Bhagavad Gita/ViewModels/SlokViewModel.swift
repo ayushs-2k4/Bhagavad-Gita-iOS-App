@@ -8,8 +8,9 @@
 import Combine
 import SwiftUI
 
-class SlokViewModel: ObservableObject {
-    @Published var slok: SlokModel? = nil
+@Observable
+class SlokViewModel {
+    var slok: SlokModel?
     var cancellables: [AnyCancellable] = []
 
 //    init() {}

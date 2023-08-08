@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AllChaptersView: View {
-    @StateObject var allChaptersViewModel = AllChaptersViewModel()
+    var allChaptersViewModel = AllChaptersViewModel()
     @State var isEnglish: Bool = false
     @Environment(\.colorScheme) var colorScheme // Access color scheme
 
@@ -20,7 +20,7 @@ struct AllChaptersView: View {
                 } else {
                     ScrollView {
                         ForEach(allChaptersViewModel.allChapters, id: \.chapter_number) { chapter in
-                            
+
                             NavigationLink(value: chapter, label: {
                                 SingleChapterCardView(chapter: chapter, isEnglish: $isEnglish)
                                     .foregroundStyle(colorScheme == .dark ? .white : .black)

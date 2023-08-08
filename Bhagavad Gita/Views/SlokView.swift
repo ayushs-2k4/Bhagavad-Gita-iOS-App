@@ -11,22 +11,15 @@ struct SlokView: View {
     let chapterNumber: Int
     let slokNumber: Int
     @Binding var isEnglish: Bool
+    @Environment(\.colorScheme) var colorScheme // Access color scheme
 
-    @StateObject var slokViewModel: SlokViewModel
-
-    @State var slok: SlokModel
+    var slokViewModel: SlokViewModel
 
     init(chapterNumber: Int, slokNumber: Int, isEnglish: Binding<Bool>) {
         self.chapterNumber = chapterNumber
         self.slokNumber = slokNumber
         self._isEnglish = isEnglish
-        self._slokViewModel = StateObject(wrappedValue: SlokViewModel(chapterNumber: chapterNumber, slokNumber: slokNumber))
-
-        self.slok = SlokModel() // Or you can initialize with appropriate value
-
-//        if let ourSlok = slokViewModel.slok {
-//            self.slok = ourSlok
-//        }
+        self.slokViewModel = SlokViewModel(chapterNumber: chapterNumber, slokNumber: slokNumber)
     }
 
     var body: some View {
@@ -35,28 +28,32 @@ struct SlokView: View {
                 ProgressView()
             } else {
                 VStack {
-//                    NavigationLink(value: slok, label: {
-//                        Text("All Authors -->")
-//                    })
-
                     TitleView(title: isEnglish ? "Verse" : "श्लोक")
 
                     Text(slokViewModel.slok?.slok ?? "No Slok")
                         .padding(.bottom, 25)
                         .multilineTextAlignment(.center)
-
-//                    Text("slok by slok: \(slok.slok)")
-//                        .padding(.bottom, 25)
-//                        .multilineTextAlignment(.center)
+                        .textSelection(.enabled)
 
                     TitleView(title: isEnglish ? "Translation" : "अनुवाद")
 
-                    Text(slokViewModel.slok?.rams.ht ?? "")
+                    Text(isEnglish ? slokViewModel.slok?.siva.et ?? "" : slokViewModel.slok?.rams.ht ?? "")
                         .padding(.bottom, 25)
+                        .textSelection(.enabled)
 
                     TitleView(title: isEnglish ? "Explanation" : "व्याख्या")
 
                     Text(isEnglish ? slokViewModel.slok?.raman.et ?? "" : slokViewModel.slok?.rams.hc ?? "")
+                        .textSelection(.enabled)
+                    
+                    NavigationLink(value: slokViewModel.slok, label: {
+                        Text("All Explanations -->")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .foregroundStyle(colorScheme == .dark ? .black : .white)
+                            .background(Color.gray)
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                    })
                 }
                 .padding(.horizontal)
             }
@@ -73,9 +70,6 @@ struct SlokView: View {
                     }
             }
         }
-        .onAppear(perform: {
-            self.slok = slokViewModel.slok ?? SlokModel()
-        })
     }
 }
 
@@ -99,11 +93,9 @@ struct TitleView: View {
 }
 
 #Preview {
-    NavigationStack {
-        @State var isEnglish = false
+    @State var isEnglish = false
 
-//        NavigationStack {
+    return NavigationStack {
         SlokView(chapterNumber: 1, slokNumber: 1, isEnglish: $isEnglish)
-//        }
     }
 }

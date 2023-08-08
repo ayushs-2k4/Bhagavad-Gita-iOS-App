@@ -8,8 +8,9 @@
 import Combine
 import SwiftUI
 
-class AllChaptersViewModel: ObservableObject {
-    @Published var allChapters: [ChapterModel] = []
+@Observable
+class AllChaptersViewModel {
+    var allChapters: [ChapterModel] = []
     var cancellables: [AnyCancellable] = []
 
     init() {
