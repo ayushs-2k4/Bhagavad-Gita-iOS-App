@@ -67,4 +67,8 @@ class AllChaptersViewModel {
             print("error in downloading all chapters async await: \(error)")
         }
     }
+
+    func getChapterInfo(chapterNumber: Int) -> ChapterModel {
+        return allChapters[chapterNumber - 1]
+    }
 }
