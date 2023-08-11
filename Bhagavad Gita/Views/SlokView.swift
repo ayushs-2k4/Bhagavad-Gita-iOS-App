@@ -11,6 +11,11 @@ struct SlokView: View {
     let chapterNumber: Int
     let slokNumber: Int
     @Binding var isEnglish: Bool
+
+    var isBookmarked: Bool
+
+    let bookmarksViewModel = BookmarksViewModel.instance
+
     @Environment(\.colorScheme) var colorScheme // Access color scheme
 
     var slokViewModel: SlokViewModel
@@ -20,6 +25,8 @@ struct SlokView: View {
         self.slokNumber = slokNumber
         self._isEnglish = isEnglish
         self.slokViewModel = SlokViewModel(chapterNumber: chapterNumber, slokNumber: slokNumber)
+
+        self.isBookmarked = bookmarksViewModel.isBookmarked(chapterNumber: chapterNumber, slokNumber: slokNumber)
     }
 
     var body: some View {
@@ -47,7 +54,6 @@ struct SlokView: View {
                         .textSelection(.enabled)
 
                     NavigationLink(value: slokViewModel.slok, label: {
-                        
                         HStack {
                             Text("All Explanations")
                             Spacer()
@@ -69,6 +75,18 @@ struct SlokView: View {
         }
         .navigationTitle(isEnglish ? "Chapter \(chapterNumber) - Verse \(slokNumber)" : "अध्याय \(chapterNumber) - श्लोक \(slokNumber)")
         .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Image(systemName: isBookmarked ? "bookmark.fill" : "bookmark")
+                    .contentTransition(.symbolEffect(.automatic))
+                    .onTapGesture {
+                        if isBookmarked {
+                            bookmarksViewModel.deleteBookmark(chapterNumber: chapterNumber, slokNumber: slokNumber)
+                        } else {
+                            bookmarksViewModel.addBookmark(chapterNumber: chapterNumber, slokNumber: slokNumber)
+                        }
+                    }
+            }
+
             ToolbarItem(placement: .topBarTrailing) {
                 Image(systemName: "globe")
                     .onTapGesture {

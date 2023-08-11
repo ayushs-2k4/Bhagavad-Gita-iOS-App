@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+enum Screens {
+    case bookMarkScreen
+}
+
 struct AllChaptersView: View {
     var allChaptersViewModel = AllChaptersViewModel()
     @State var isEnglish: Bool = false
@@ -48,8 +52,21 @@ struct AllChaptersView: View {
             .navigationDestination(for: ChapterModel.self) { chapter in
                 ChapterInformationView(chapter: chapter, isEnglish: $isEnglish)
             }
+            .navigationDestination(for: Screens.self) { selectedScreen in
+                if selectedScreen == Screens.bookMarkScreen {
+                    BookmarksScreen(isEnglish: $isEnglish)
+                }
+            }
             .navigationTitle(isEnglish ? "Bhagavad Gita" : "भगवद गीता")
             .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Image(systemName: "bookmark")
+                        .onTapGesture {
+                            // Navigate to the BookmarksView screen when the bookmark icon is clicked.
+                            navigationPath.append(Screens.bookMarkScreen)
+                        }
+                }
+
                 ToolbarItem(placement: .topBarTrailing) {
                     Image(systemName: "globe")
                         .onTapGesture {
