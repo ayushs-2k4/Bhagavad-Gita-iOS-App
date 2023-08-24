@@ -10,11 +10,9 @@ import SwiftUI
 struct BookmarksScreen: View {
     let bookmarksViewModel = BookmarksViewModel.instance
     @Binding var isEnglish: Bool
-    @State var bookmarksList: [BookmarkModel]
 
     init(isEnglish: Binding<Bool>) {
         _isEnglish = isEnglish
-        bookmarksList = bookmarksViewModel.bookmarks
     }
 
     var body: some View {
@@ -24,7 +22,7 @@ struct BookmarksScreen: View {
             } else {
                 ScrollView {
                     VStack {
-                        ForEach(bookmarksList) { bookmark in
+                        ForEach(bookmarksViewModel.bookmarks) { bookmark in
                             NavigationLink(value: "\(bookmark.chapterNumber) \(bookmark.slokNumber)", label: {
                                 BookmarksRowView(chapterNumber: bookmark.chapterNumber, slokNumber: bookmark.slokNumber, isEnglish: $isEnglish)
                             })

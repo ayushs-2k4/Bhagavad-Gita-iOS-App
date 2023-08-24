@@ -20,9 +20,14 @@ class BookmarksViewModel {
     let bookmarksKey = "bookmarks_key"
 
     private init() {
+        getBookmarks()
+    }
+
+    func getBookmarks() {
         guard let data = UserDefaults.standard.data(forKey: bookmarksKey),
               let ourData = try? JSONDecoder().decode([BookmarkModel].self, from: data) else { return }
 
+        bookmarks.removeAll()
         bookmarks.append(contentsOf: ourData)
     }
 
