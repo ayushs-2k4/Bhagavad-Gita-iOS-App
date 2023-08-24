@@ -20,5 +20,68 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75480A2A-5375-45D2-8956-7BACE8DF8D46"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bhagavad Gita/ViewModels/SlokViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getChapterInformationUsingAsyncAwait(chapterNumber:slokNumber:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "75480A2A-5375-45D2-8956-7BACE8DF8D46 - 6c40251d75661a7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Bhagavad_Gita.SlokViewModel.getChapterInformationUsingAsyncAwait(chapterNumber: Swift.Int, slokNumber: Swift.Int) async -&gt; ()"
+                  moduleName = "Bhagavad Gita"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushsinghal/XcodeProjects/My%20Projects/Bhagavad%20Gita/Bhagavad%20Gita/ViewModels/SlokViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "75480A2A-5375-45D2-8956-7BACE8DF8D46 - bda0860b5c65d0fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Bhagavad_Gita.SlokViewModel.getChapterInformationUsingAsyncAwait(chapterNumber: Swift.Int, slokNumber: Swift.Int) async -&gt; ()"
+                  moduleName = "Bhagavad Gita"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushsinghal/XcodeProjects/My%20Projects/Bhagavad%20Gita/Bhagavad%20Gita/ViewModels/SlokViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "180">
+               </Location>
+               <Location
+                  uuid = "75480A2A-5375-45D2-8956-7BACE8DF8D46 - bda0860b5c65d0fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Bhagavad_Gita.SlokViewModel.getChapterInformationUsingAsyncAwait(chapterNumber: Swift.Int, slokNumber: Swift.Int) async -&gt; ()"
+                  moduleName = "Bhagavad Gita"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ayushsinghal/XcodeProjects/My%20Projects/Bhagavad%20Gita/Bhagavad%20Gita/ViewModels/SlokViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
