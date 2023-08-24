@@ -1,5 +1,5 @@
 //
-//  ChapterInformationView.swift
+//  ChapterInformationScreen.swift
 //  Bhagavad Gita
 //
 //  Created by Ayush Singhal on 07/08/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChapterInformationView: View {
+struct ChapterInformationScreen: View {
     let chapter: ChapterModel
     @Binding var isEnglish: Bool
     @Environment(\.colorScheme) var colorScheme // Access color scheme
@@ -30,7 +30,7 @@ struct ChapterInformationView: View {
             let components = str.components(separatedBy: " ")
             let chapt = Int(components[0]) ?? 1
             let slokNo = Int(components[1]) ?? 1
-            SlokView(chapterNumber: chapt, slokNumber: slokNo, isEnglish: $isEnglish)
+            SlokScreen(chapterNumber: chapt, slokNumber: slokNo, isEnglish: $isEnglish)
         }
         .navigationTitle(isEnglish ? chapter.translation : chapter.name)
         .toolbar {
@@ -48,6 +48,6 @@ struct ChapterInformationView: View {
     NavigationStack {
         @State var isEnglish = false
 
-        ChapterInformationView(chapter: ChapterModel.testChapter, isEnglish: $isEnglish)
+        ChapterInformationScreen(chapter: ChapterModel.testChapter, isEnglish: $isEnglish)
     }
 }

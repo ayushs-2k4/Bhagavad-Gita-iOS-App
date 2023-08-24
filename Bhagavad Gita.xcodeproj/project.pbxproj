@@ -11,20 +11,20 @@
 		072F9A0E2A8619FC004E8B69 /* BookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F9A0D2A8619FC004E8B69 /* BookmarkModel.swift */; };
 		072F9A102A861C4D004E8B69 /* BookmarksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F9A0F2A861C4D004E8B69 /* BookmarksScreen.swift */; };
 		072F9A122A861D2E004E8B69 /* ChapterInformationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F9A112A861D2E004E8B69 /* ChapterInformationRowView.swift */; };
-		0747B8A62A810F9900B12C66 /* ChapterInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747B8A52A810F9900B12C66 /* ChapterInformationView.swift */; };
+		0747B8A62A810F9900B12C66 /* ChapterInformationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747B8A52A810F9900B12C66 /* ChapterInformationScreen.swift */; };
 		0755EB042A80FECD0078A3A9 /* ChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755EB032A80FECD0078A3A9 /* ChapterModel.swift */; };
 		0755EB062A80FED70078A3A9 /* AllChaptersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755EB052A80FED70078A3A9 /* AllChaptersViewModel.swift */; };
 		07619C012A9704270090FBED /* RandomSlokStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07619C002A9704270090FBED /* RandomSlokStructure.swift */; };
 		0785A4062A80FD73007C322C /* Bhagavad_GitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785A4052A80FD73007C322C /* Bhagavad_GitaApp.swift */; };
-		0785A4082A80FD73007C322C /* AllChaptersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785A4072A80FD73007C322C /* AllChaptersView.swift */; };
+		0785A4082A80FD73007C322C /* AllChaptersScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785A4072A80FD73007C322C /* AllChaptersScreen.swift */; };
 		0785A40A2A80FD75007C322C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0785A4092A80FD75007C322C /* Assets.xcassets */; };
 		0785A40D2A80FD75007C322C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0785A40C2A80FD75007C322C /* Preview Assets.xcassets */; };
-		07F790542A81149F007CBCD1 /* SlokView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F790532A81149F007CBCD1 /* SlokView.swift */; };
+		07F790542A81149F007CBCD1 /* SlokScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F790532A81149F007CBCD1 /* SlokScreen.swift */; };
 		07F790562A81183A007CBCD1 /* SlokViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F790552A81183A007CBCD1 /* SlokViewModel.swift */; };
 		07F790582A811B92007CBCD1 /* SlokModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F790572A811B92007CBCD1 /* SlokModel.swift */; };
 		07F7905A2A8125CD007CBCD1 /* DownloadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F790592A8125CD007CBCD1 /* DownloadData.swift */; };
-		07F7905C2A812683007CBCD1 /* OtherExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7905B2A812683007CBCD1 /* OtherExplanationView.swift */; };
-		07F7905E2A81292E007CBCD1 /* AllAuthorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7905D2A81292E007CBCD1 /* AllAuthorsView.swift */; };
+		07F7905C2A812683007CBCD1 /* OtherExplanationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7905B2A812683007CBCD1 /* OtherExplanationScreen.swift */; };
+		07F7905E2A81292E007CBCD1 /* AllAuthorsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F7905D2A81292E007CBCD1 /* AllAuthorsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,23 +32,23 @@
 		072F9A0D2A8619FC004E8B69 /* BookmarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkModel.swift; sourceTree = "<group>"; };
 		072F9A0F2A861C4D004E8B69 /* BookmarksScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksScreen.swift; sourceTree = "<group>"; };
 		072F9A112A861D2E004E8B69 /* ChapterInformationRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterInformationRowView.swift; sourceTree = "<group>"; };
-		0747B8A52A810F9900B12C66 /* ChapterInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterInformationView.swift; sourceTree = "<group>"; };
+		0747B8A52A810F9900B12C66 /* ChapterInformationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterInformationScreen.swift; sourceTree = "<group>"; };
 		0755EB032A80FECD0078A3A9 /* ChapterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterModel.swift; sourceTree = "<group>"; };
 		0755EB052A80FED70078A3A9 /* AllChaptersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChaptersViewModel.swift; sourceTree = "<group>"; };
 		0755EB082A8105740078A3A9 /* Bhagavad-Gita-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bhagavad-Gita-Info.plist"; sourceTree = SOURCE_ROOT; };
 		07619C002A9704270090FBED /* RandomSlokStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSlokStructure.swift; sourceTree = "<group>"; };
 		0785A4022A80FD73007C322C /* Bhagavad Gita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bhagavad Gita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0785A4052A80FD73007C322C /* Bhagavad_GitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bhagavad_GitaApp.swift; sourceTree = "<group>"; };
-		0785A4072A80FD73007C322C /* AllChaptersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChaptersView.swift; sourceTree = "<group>"; };
+		0785A4072A80FD73007C322C /* AllChaptersScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChaptersScreen.swift; sourceTree = "<group>"; };
 		0785A4092A80FD75007C322C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0785A40C2A80FD75007C322C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		07A74FC52A81FEA700E64B27 /* Bhagavad Gita.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bhagavad Gita.entitlements"; sourceTree = "<group>"; };
-		07F790532A81149F007CBCD1 /* SlokView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlokView.swift; sourceTree = "<group>"; };
+		07F790532A81149F007CBCD1 /* SlokScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlokScreen.swift; sourceTree = "<group>"; };
 		07F790552A81183A007CBCD1 /* SlokViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlokViewModel.swift; path = "Bhagavad Gita/ViewModels/SlokViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		07F790572A811B92007CBCD1 /* SlokModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlokModel.swift; path = "Bhagavad Gita/Models/SlokModel.swift"; sourceTree = SOURCE_ROOT; };
 		07F790592A8125CD007CBCD1 /* DownloadData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadData.swift; path = "Bhagavad Gita/Utilities/DownloadData.swift"; sourceTree = SOURCE_ROOT; };
-		07F7905B2A812683007CBCD1 /* OtherExplanationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherExplanationView.swift; sourceTree = "<group>"; };
-		07F7905D2A81292E007CBCD1 /* AllAuthorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllAuthorsView.swift; sourceTree = "<group>"; };
+		07F7905B2A812683007CBCD1 /* OtherExplanationScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherExplanationScreen.swift; sourceTree = "<group>"; };
+		07F7905D2A81292E007CBCD1 /* AllAuthorsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllAuthorsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,13 +134,13 @@
 		0785A4162A80FDA0007C322C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0785A4072A80FD73007C322C /* AllChaptersView.swift */,
+				0785A4072A80FD73007C322C /* AllChaptersScreen.swift */,
 				072F9A0F2A861C4D004E8B69 /* BookmarksScreen.swift */,
-				0747B8A52A810F9900B12C66 /* ChapterInformationView.swift */,
+				0747B8A52A810F9900B12C66 /* ChapterInformationScreen.swift */,
 				072F9A112A861D2E004E8B69 /* ChapterInformationRowView.swift */,
-				07F790532A81149F007CBCD1 /* SlokView.swift */,
-				07F7905D2A81292E007CBCD1 /* AllAuthorsView.swift */,
-				07F7905B2A812683007CBCD1 /* OtherExplanationView.swift */,
+				07F790532A81149F007CBCD1 /* SlokScreen.swift */,
+				07F7905D2A81292E007CBCD1 /* AllAuthorsScreen.swift */,
+				07F7905B2A812683007CBCD1 /* OtherExplanationScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,15 +221,15 @@
 				072F9A102A861C4D004E8B69 /* BookmarksScreen.swift in Sources */,
 				0755EB042A80FECD0078A3A9 /* ChapterModel.swift in Sources */,
 				07F7905A2A8125CD007CBCD1 /* DownloadData.swift in Sources */,
-				0785A4082A80FD73007C322C /* AllChaptersView.swift in Sources */,
-				0747B8A62A810F9900B12C66 /* ChapterInformationView.swift in Sources */,
-				07F7905C2A812683007CBCD1 /* OtherExplanationView.swift in Sources */,
+				0785A4082A80FD73007C322C /* AllChaptersScreen.swift in Sources */,
+				0747B8A62A810F9900B12C66 /* ChapterInformationScreen.swift in Sources */,
+				07F7905C2A812683007CBCD1 /* OtherExplanationScreen.swift in Sources */,
 				07F790582A811B92007CBCD1 /* SlokModel.swift in Sources */,
 				07F790562A81183A007CBCD1 /* SlokViewModel.swift in Sources */,
 				072F9A0C2A861960004E8B69 /* BookmarksViewModel.swift in Sources */,
 				0785A4062A80FD73007C322C /* Bhagavad_GitaApp.swift in Sources */,
-				07F790542A81149F007CBCD1 /* SlokView.swift in Sources */,
-				07F7905E2A81292E007CBCD1 /* AllAuthorsView.swift in Sources */,
+				07F790542A81149F007CBCD1 /* SlokScreen.swift in Sources */,
+				07F7905E2A81292E007CBCD1 /* AllAuthorsScreen.swift in Sources */,
 				07619C012A9704270090FBED /* RandomSlokStructure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

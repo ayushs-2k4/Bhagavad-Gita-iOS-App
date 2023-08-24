@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AllChaptersScreen.swift
 //  Bhagavad Gita
 //
 //  Created by Ayush Singhal on 07/08/23.
@@ -11,7 +11,7 @@ enum Screens {
     case bookMarkScreen
 }
 
-struct AllChaptersView: View {
+struct AllChaptersScreen: View {
     var allChaptersViewModel = AllChaptersViewModel()
     @State var isEnglish: Bool = false
     @State var navigationPath: NavigationPath = .init()
@@ -49,7 +49,7 @@ struct AllChaptersView: View {
                 }
             }
             .navigationDestination(for: ChapterModel.self) { chapter in
-                ChapterInformationView(chapter: chapter, isEnglish: $isEnglish)
+                ChapterInformationScreen(chapter: chapter, isEnglish: $isEnglish)
             }
             .navigationDestination(for: Screens.self) { selectedScreen in
                 if selectedScreen == Screens.bookMarkScreen {
@@ -57,7 +57,7 @@ struct AllChaptersView: View {
                 }
             }
             .navigationDestination(for: RandomSlokStructure.self, destination: { randomSlokIn in
-                SlokView(chapterNumber: randomSlokIn.chapterNumber, slokNumber: randomSlokIn.slokNumber, isEnglish: $isEnglish)
+                SlokScreen(chapterNumber: randomSlokIn.chapterNumber, slokNumber: randomSlokIn.slokNumber, isEnglish: $isEnglish)
             })
             .navigationTitle(isEnglish ? "Bhagavad Gita" : "भगवद गीता")
             .toolbar {
@@ -111,7 +111,7 @@ struct SingleChapterCardView: View {
 }
 
 #Preview {
-    AllChaptersView()
+    AllChaptersScreen()
 }
 
 #Preview("SingleChapterCardView") {

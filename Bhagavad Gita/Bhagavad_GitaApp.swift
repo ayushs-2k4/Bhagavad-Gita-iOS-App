@@ -11,7 +11,7 @@ import SwiftUI
 struct Bhagavad_GitaApp: App {
     var body: some Scene {
         WindowGroup {
-            AllChaptersView()
+            AllChaptersScreen()
         }
     }
 }

@@ -38,7 +38,7 @@ struct BookmarksScreen: View {
             let components = str.components(separatedBy: " ")
             let chapt = Int(components[0]) ?? 1
             let slokNo = Int(components[1]) ?? 1
-            SlokView(chapterNumber: chapt, slokNumber: slokNo, isEnglish: $isEnglish)
+            SlokScreen(chapterNumber: chapt, slokNumber: slokNo, isEnglish: $isEnglish)
         }
         .toolbar {
             ToolbarItem(placement: .automatic) {

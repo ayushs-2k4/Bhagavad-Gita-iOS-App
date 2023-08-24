@@ -1,5 +1,5 @@
 //
-//  SlokView.swift
+//  SlokScreen.swift
 //  Bhagavad Gita
 //
 //  Created by Ayush Singhal on 07/08/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SlokView: View {
+struct SlokScreen: View {
     let chapterNumber: Int
     let slokNumber: Int
     @Binding var isEnglish: Bool
@@ -71,7 +71,7 @@ struct SlokView: View {
             }
         }
         .navigationDestination(for: SlokModel.self) { slok in
-            AllAuthorsView(slok: slok)
+            AllAuthorsScreen(slok: slok)
         }
         .navigationTitle(isEnglish ? "Chapter \(chapterNumber) - Verse \(slokNumber)" : "अध्याय \(chapterNumber) - श्लोक \(slokNumber)")
         .toolbar {
@@ -120,6 +120,6 @@ struct TitleView: View {
     @State var isEnglish = false
 
     return NavigationStack {
-        SlokView(chapterNumber: 1, slokNumber: 1, isEnglish: $isEnglish)
+        SlokScreen(chapterNumber: 1, slokNumber: 1, isEnglish: $isEnglish)
     }
 }
