@@ -29,8 +29,7 @@ struct AllChaptersView: View {
                             let chapterInfo = allChaptersViewModel.getChapterInfo(chapterNumber: randomChapterNumber)
                             let randomSlokNumber = Int.random(in: 1 ... chapterInfo.verses_count)
 
-                            navigationPath.append(chapterInfo)
-                            navigationPath.append("\(randomChapterNumber) \(randomSlokNumber)")
+                            navigationPath.append(RandomSlokStructure(chapterNumber: randomChapterNumber, slokNumber: randomSlokNumber))
                         }
                         .buttonStyle(.bordered)
                         .buttonBorderShape(.capsule)
@@ -57,6 +56,9 @@ struct AllChaptersView: View {
                     BookmarksScreen(isEnglish: $isEnglish)
                 }
             }
+            .navigationDestination(for: RandomSlokStructure.self, destination: { randomSlokIn in
+                SlokView(chapterNumber: randomSlokIn.chapterNumber, slokNumber: randomSlokIn.slokNumber, isEnglish: $isEnglish)
+            })
             .navigationTitle(isEnglish ? "Bhagavad Gita" : "भगवद गीता")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {

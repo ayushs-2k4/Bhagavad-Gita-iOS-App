@@ -14,6 +14,7 @@
 		0747B8A62A810F9900B12C66 /* ChapterInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0747B8A52A810F9900B12C66 /* ChapterInformationView.swift */; };
 		0755EB042A80FECD0078A3A9 /* ChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755EB032A80FECD0078A3A9 /* ChapterModel.swift */; };
 		0755EB062A80FED70078A3A9 /* AllChaptersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0755EB052A80FED70078A3A9 /* AllChaptersViewModel.swift */; };
+		07619C012A9704270090FBED /* RandomSlokStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07619C002A9704270090FBED /* RandomSlokStructure.swift */; };
 		0785A4062A80FD73007C322C /* Bhagavad_GitaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785A4052A80FD73007C322C /* Bhagavad_GitaApp.swift */; };
 		0785A4082A80FD73007C322C /* AllChaptersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785A4072A80FD73007C322C /* AllChaptersView.swift */; };
 		0785A40A2A80FD75007C322C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0785A4092A80FD75007C322C /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		0755EB032A80FECD0078A3A9 /* ChapterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterModel.swift; sourceTree = "<group>"; };
 		0755EB052A80FED70078A3A9 /* AllChaptersViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllChaptersViewModel.swift; sourceTree = "<group>"; };
 		0755EB082A8105740078A3A9 /* Bhagavad-Gita-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bhagavad-Gita-Info.plist"; sourceTree = SOURCE_ROOT; };
+		07619C002A9704270090FBED /* RandomSlokStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomSlokStructure.swift; sourceTree = "<group>"; };
 		0785A4022A80FD73007C322C /* Bhagavad Gita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bhagavad Gita.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0785A4052A80FD73007C322C /* Bhagavad_GitaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bhagavad_GitaApp.swift; sourceTree = "<group>"; };
 		0785A4072A80FD73007C322C /* AllChaptersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChaptersView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				07F790592A8125CD007CBCD1 /* DownloadData.swift */,
+				07619C002A9704270090FBED /* RandomSlokStructure.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -90,10 +93,10 @@
 				07A74FC52A81FEA700E64B27 /* Bhagavad Gita.entitlements */,
 				0755EB082A8105740078A3A9 /* Bhagavad-Gita-Info.plist */,
 				0785A4052A80FD73007C322C /* Bhagavad_GitaApp.swift */,
-				0755EB072A80FF5D0078A3A9 /* Utilities */,
+				0785A4132A80FD8C007C322C /* Models */,
 				0785A4162A80FDA0007C322C /* Views */,
 				0785A4142A80FD94007C322C /* ViewModels */,
-				0785A4132A80FD8C007C322C /* Models */,
+				0755EB072A80FF5D0078A3A9 /* Utilities */,
 				0785A4092A80FD75007C322C /* Assets.xcassets */,
 				0785A40B2A80FD75007C322C /* Preview Content */,
 			);
@@ -227,6 +230,7 @@
 				0785A4062A80FD73007C322C /* Bhagavad_GitaApp.swift in Sources */,
 				07F790542A81149F007CBCD1 /* SlokView.swift in Sources */,
 				07F7905E2A81292E007CBCD1 /* AllAuthorsView.swift in Sources */,
+				07619C012A9704270090FBED /* RandomSlokStructure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
