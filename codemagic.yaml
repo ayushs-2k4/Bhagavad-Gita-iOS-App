@@ -5,14 +5,15 @@ workflows:
             xcode: 15
         scripts:
             - name: CICD Started
-                script: echo "Welcome to your CICD Setup"
+              script: |
+                echo "Welcome to your CICD Setup"
             - name: Build Bhagavad Gita
-                script: xcodebuild build -project "Bhagavad Gita.xcodeproj" -scheme "Bhagavad Gita" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+              script: xcodebuild build -project "Bhagavad Gita.xcodeproj" -scheme "Bhagavad Gita" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
             - name: iOS test
-                script: |
-                    xcode-project run-tests \
-                      --project Bhagavad Gita.xcodeproj \
-                      --scheme Bhagavad Gita
+              script: |
+                xcode-project run-tests \
+                  --project Bhagavad Gita.xcodeproj \
+                  --scheme Bhagavad Gita
         test_report: build/ios/test/*.xml
         publishing:
             email:
