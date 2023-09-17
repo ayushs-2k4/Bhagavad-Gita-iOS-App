@@ -14,7 +14,6 @@ workflows:
                 xcode-project run-tests \
                   --project Bhagavad Gita.xcodeproj \
                   --scheme Bhagavad Gita
-        test_report: build/ios/test/*.xml
         publishing:
             email:
                 recipients:
