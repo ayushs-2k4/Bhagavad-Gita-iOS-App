@@ -14,7 +14,7 @@ workflows:
                       --project Bhagavad Gita.xcodeproj \
                       --scheme Bhagavad Gita
         test_report: build/ios/test/*.xml
-            publishing:
-                email:
-                    recipients:
-                     - ayushsinghals02@gmail.com
+        publishing:
+            email:
+                recipients:
+                    - ayushsinghals02@gmail.com
