@@ -13,10 +13,13 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      - name: Set up Xcode
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: 15.0-beta
+      # - name: Set up Xcode
+      #   uses: maxim-lobanov/setup-xcode@v1
+      #   with:
+      #     xcode-version: 15.0-beta
+
+      - name: Get List of XCode Versions
+        run: ls /Applications/
 
 
       - name: Build
