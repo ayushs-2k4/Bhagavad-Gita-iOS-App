@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		071629462AB6EE30002A4F89 /* Bhagavad_Gita_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071629452AB6EE30002A4F89 /* Bhagavad_Gita_Tests.swift */; };
-		0716294D2AB6EE4C002A4F89 /* BhagavadGitaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716294C2AB6EE4C002A4F89 /* BhagavadGitaTests.swift */; };
+		0716294D2AB6EE4C002A4F89 /* BookmarksViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0716294C2AB6EE4C002A4F89 /* BookmarksViewModelTests.swift */; };
 		072F9A0C2A861960004E8B69 /* BookmarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F9A0B2A861960004E8B69 /* BookmarksViewModel.swift */; };
 		072F9A0E2A8619FC004E8B69 /* BookmarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F9A0D2A8619FC004E8B69 /* BookmarkModel.swift */; };
 		072F9A102A861C4D004E8B69 /* BookmarksScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F9A0F2A861C4D004E8B69 /* BookmarksScreen.swift */; };
@@ -41,8 +40,7 @@
 
 /* Begin PBXFileReference section */
 		071629432AB6EE30002A4F89 /* Bhagavad Gita Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bhagavad Gita Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		071629452AB6EE30002A4F89 /* Bhagavad_Gita_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bhagavad_Gita_Tests.swift; sourceTree = "<group>"; };
-		0716294C2AB6EE4C002A4F89 /* BhagavadGitaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadGitaTests.swift; sourceTree = "<group>"; };
+		0716294C2AB6EE4C002A4F89 /* BookmarksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewModelTests.swift; sourceTree = "<group>"; };
 		072F9A0B2A861960004E8B69 /* BookmarksViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BookmarksViewModel.swift; path = "Bhagavad Gita/ViewModels/BookmarksViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		072F9A0D2A8619FC004E8B69 /* BookmarkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkModel.swift; sourceTree = "<group>"; };
 		072F9A0F2A861C4D004E8B69 /* BookmarksScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksScreen.swift; sourceTree = "<group>"; };
@@ -87,8 +85,7 @@
 		071629442AB6EE30002A4F89 /* Bhagavad Gita Tests */ = {
 			isa = PBXGroup;
 			children = (
-				071629452AB6EE30002A4F89 /* Bhagavad_Gita_Tests.swift */,
-				0716294C2AB6EE4C002A4F89 /* BhagavadGitaTests.swift */,
+				0716294C2AB6EE4C002A4F89 /* BookmarksViewModelTests.swift */,
 			);
 			path = "Bhagavad Gita Tests";
 			sourceTree = "<group>";
@@ -278,8 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0716294D2AB6EE4C002A4F89 /* BhagavadGitaTests.swift in Sources */,
-				071629462AB6EE30002A4F89 /* Bhagavad_Gita_Tests.swift in Sources */,
+				0716294D2AB6EE4C002A4F89 /* BookmarksViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
