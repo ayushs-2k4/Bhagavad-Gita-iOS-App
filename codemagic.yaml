@@ -1,0 +1,10 @@
+workflows:
+    bhagavad-gita-workflow:
+        name: Bhagavad Gita Pipeline
+        scripts:
+         - name: CICD Started
+           script: echo "Welcome to your CICD Setup"
+        publishing:
+            email:
+                recipients:
+                 - ayushsinghals02@gmail.com
