@@ -5,7 +5,7 @@ workflows:
          - name: CICD Started
            script: echo "Welcome to your CICD Setup"
          - name: Build Bhagavad Gita
-           script: xcodebuild build -project ""Bhagavad Gita.xcodeproj" -scheme "MyScheme" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+           script: xcodebuild build -project "Bhagavad Gita.xcodeproj" -scheme "MyScheme" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
         publishing:
             email:
                 recipients:
