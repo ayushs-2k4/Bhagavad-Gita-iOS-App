@@ -1,10 +1,10 @@
 workflows:
     bhagavad-gita-workflow:
         name: Bhagavad Gita Pipeline
+        environment:
+            xcode: 15
         scripts:
          - name: CICD Started
-           environment:
-            xcode: 15
            script: echo "Welcome to your CICD Setup"
          - name: Build Bhagavad Gita
            script: xcodebuild build -project "Bhagavad Gita.xcodeproj" -scheme "Bhagavad Gita" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
