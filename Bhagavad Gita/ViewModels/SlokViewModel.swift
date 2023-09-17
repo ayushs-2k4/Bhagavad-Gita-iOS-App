@@ -14,7 +14,6 @@ class SlokViewModel {
     var cancellables: [AnyCancellable] = []
 
     init(chapterNumber: Int, slokNumber: Int) {
-//        getChapterInformation(chapterNumber: chapterNumber, slokNumber: slokNumber)
          Task {
              await  getChapterInformationUsingAsyncAwait(chapterNumber: chapterNumber, slokNumber: slokNumber)
         }

@@ -14,7 +14,6 @@ class AllChaptersViewModel {
     var cancellables: [AnyCancellable] = []
 
     init() {
-//        getAllChapters()
         Task {
             await getAllChaptersUsingAsyncAwait()
         }
