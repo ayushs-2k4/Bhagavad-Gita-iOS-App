@@ -12,8 +12,8 @@ workflows:
             - name: iOS test
               script: |
                 xcode-project run-tests \
-                  --project Bhagavad Gita.xcodeproj \
-                  --scheme Bhagavad Gita
+                  --project "Bhagavad Gita.xcodeproj" \
+                  --scheme "Bhagavad Gita"
         publishing:
             email:
                 recipients:
