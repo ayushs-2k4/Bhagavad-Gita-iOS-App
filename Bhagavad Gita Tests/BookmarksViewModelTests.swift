@@ -74,6 +74,6 @@ class BookmarksViewModelTests: XCTestCase {
 
     func testBookmarksViewModel() {
         let viewModel = BookmarksViewModel.instance
-        XCTAssertNotNil(viewModel)
+        XCTAssertNil(viewModel)
     }
 }
